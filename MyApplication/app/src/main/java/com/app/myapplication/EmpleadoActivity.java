@@ -58,8 +58,6 @@ public class EmpleadoActivity extends AppCompatActivity {
         if(EmpleadoId != null && EmpleadoId.trim().length() > 0 ){
             edtUId.setFocusable(false);
         } else {
-            txtUId.setVisibility(View.INVISIBLE);
-            edtUId.setVisibility(View.INVISIBLE);
             btnDel.setVisibility(View.INVISIBLE);
         }
 
@@ -67,8 +65,9 @@ public class EmpleadoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Empleado u = new Empleado();
+                u.setClave(edtUId.getText().toString());
                 u.setNombre(edtEmpleadoname.getText().toString());
-                u.setDireccion(edtEmpleadoname.getText().toString());
+                u.setDireccion(edtEmpleadoDireccion.getText().toString());
                 u.setTelefono(edtEmpleadoTelefono.getText().toString());
                 if(EmpleadoId != null && EmpleadoId.trim().length() > 0){
                     //update Empleado
