@@ -31,7 +31,7 @@ public class EmpleadoAdapter extends ArrayAdapter<Empleado>{
         View rowView = inflater.inflate(R.layout.list_user, parent, false);
 
         TextView txtUserId = (TextView) rowView.findViewById(R.id.txtUserId);
-        TextView txtUsername = (TextView) rowView.findViewById(R.id.txtEmpleadoName);
+        TextView txtUsername = (TextView) rowView.findViewById(R.id.txtUsername);
         TextView txtTelefono = (TextView) rowView.findViewById(R.id.txtTelefono);
         TextView txtDireccion = (TextView) rowView.findViewById(R.id.txtDireccion);
 
